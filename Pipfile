@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+tqdm = "*"
+jaxlib = "*"
+jax = "*"
+jupyter = "*"
+notebook = "*"
+jupyterlab = "*"
+jupytext = "*"
+matplotlib = "*"
+
+[scripts]
+# start the application server
+start = "jupyter notebook --notebook-dir=notebooks"
+
+[pipenv]
+allow_prereleases = false
+
+[requires]
+python_version = "3.8"
